@@ -1,6 +1,6 @@
 const Dashboard = () => (
   <div>
-    <h1>Dashboard Update</h1>
+    <h1>Dashboard</h1>
   </div>
 );
 
