@@ -20,10 +20,15 @@ jobs:
       - run: yarn install
       - run: yarn lint
       - run: yarn test
-      - uses: actions/setup-node@v1
+      - run: yarn build
+      - uses: peaceiris/actions-gh-pages@v3
         with:
-          node-version: 12
-      - run: yarn install
-      - run: yarn deploy
-        env:
-          github_token: ${{secrets.GITHUB_TOKEN}}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+      # - uses: actions/setup-node@v1
+      #   with:
+      #     node-version: 12
+      # - run: yarn install
+      # - run: yarn deploy
+      #   env:
+      #     github_token: ${{secrets.GITHUB_TOKEN}}
