@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    name: 📦 Build
+    name: 📦 Build and deploy 🎉
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,13 +20,6 @@ jobs:
       - run: yarn install
       - run: yarn lint
       - run: yarn test
-
-  publish-github-pages:
-    needs: build
-    name: 🎉 Publish Github Page
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: 12

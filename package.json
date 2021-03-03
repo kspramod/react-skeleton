@@ -23,7 +23,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://github.com/kspramod/react-skeleton -f",
+    "deploy": "gh-pages -d build -r https://github.com/kspramod/react-skeleton -f -u \"Pramod Kumar <50309120+kspramod@users.noreply.github.com>\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
