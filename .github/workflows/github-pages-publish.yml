@@ -5,8 +5,8 @@ name: 🛠 Github Pages Deploy 📦
 on:
   push:
     branches:
-    - main
-    - release/*
+      - main
+      - release/*
 
 jobs:
   build:
@@ -17,9 +17,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm install
-      - run: npm run lint
-      - run: npm test
+      - run: yarn install
+      - run: yarn lint
+      - run: yarn test
 
   publish-github-pages:
     needs: build
@@ -30,7 +30,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm install
-      - run: npm run deploy
+      - run: yarn install
+      - run: yarn deploy
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
