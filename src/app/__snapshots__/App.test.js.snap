@@ -20,6 +20,77 @@ exports[`<App /> Snapshot test 1`] = `
         Dashboard
       </h1>
     </div>
+    <div>
+      <h3>
+        Sign Up
+      </h3>
+      <form
+        action="#"
+        class="signup-form"
+        errors="[object Object]"
+        initialerrors="[object Object]"
+        initialtouched="[object Object]"
+        initialvalues="[object Object]"
+        submitcount="0"
+        touched="[object Object]"
+        values="[object Object]"
+      >
+        <div>
+          <label
+            for="firstName"
+          >
+            First Name
+          </label>
+          <div>
+            <input
+              id="firstName"
+              name="firstName"
+              placeholder="Jane"
+              required=""
+              value=""
+            />
+          </div>
+        </div>
+        <div>
+          <label
+            for="lastName"
+          >
+            Last Name
+          </label>
+          <div>
+            <input
+              id="lastName"
+              name="lastName"
+              placeholder="Doe"
+              required=""
+              value=""
+            />
+          </div>
+        </div>
+        <div>
+          <label
+            for="email"
+          >
+            Email
+          </label>
+          <div>
+            <input
+              id="email"
+              name="email"
+              placeholder="jane@acme.com"
+              required=""
+              type="email"
+              value=""
+            />
+          </div>
+        </div>
+        <button
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
   </div>
 </div>
 `;

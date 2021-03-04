@@ -1,4 +1,5 @@
 import Dashboard from './containers/Dashboard';
+import Details from './containers/Details';
 
 import logo from '../assets/logo.svg';
 import './App.css';
@@ -11,6 +12,7 @@ function App() {
         Sample React Skeleton
       </header>
       <Dashboard />
+      <Details />
     </div>
   );
 }
